@@ -944,7 +944,7 @@ struct DndetaMFTPbPb {
     if constexpr (fillHis) {
       registry.fill(HIST("hEvtSel"), 1);
     }
-    if (eventCuts.requireIsGoodZvtxFT0VsPV && !collision.selection_bit(o2::aod::evsel::kIsGoodZvtxFT0vsPV)) {      
+    if (eventCuts.requireIsGoodZvtxFT0VsPV && !collision.selection_bit(o2::aod::evsel::kIsGoodZvtxFT0vsPV)) {
       return false;
     }
     if constexpr (fillHis) {
